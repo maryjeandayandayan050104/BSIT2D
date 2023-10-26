@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./green-aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: inherit;
+}
+
+/* Navigation Bar */
+.bar{
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: rgb(58, 90, 32);
+    box-shadow: 0 0 14px rgb(69, 56, 56, 0.3); 
+}
+.bar .logo{
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+}
+.bar .navigation li{
+    list-style: none;
+    display: inline-block;
+}
+.bar .navigation li a{
+    display: block;
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 20px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+.bar .navigation li a i{
+    color: aliceblue;
+}
+.bar li a:hover{
+    border-bottom: 3px solid aliceblue;
+}
+.main .icon{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    width: 20%;
+}
+#purchase{
+    text-align: center;
+    margin-top: 1%;
+    color: aliceblue;
+    font-size: 250%;
+}
+
+/* CSS Media Queries */
+
+@media (min-width: 1000px){
+    .main{
+        min-width: 100vh;
+        min-height: 595px;
+    }
+}
+
+@media (max-width: 2700px){
+    .main{
+        min-width: 100vh;
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .main{
+        min-width: 100vh;
+        min-height: 400%;
+    }
+    .bar{
+        padding: 15px 2%;
+    }
+}
