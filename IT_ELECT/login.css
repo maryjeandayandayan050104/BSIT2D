@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./green-aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: inherit;
+}
+
+/* Navigation Bar */
+.bar{
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: rgb(58, 90, 32);
+    box-shadow: 0 0 14px rgb(69, 56, 56, 0.3);
+}
+.bar .logo{
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+}
+.bar .navigation li{
+    list-style: none;
+    display: inline-block;
+}
+.bar .navigation li a{
+    display: block;
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 20px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+.bar .navigation li a i{
+    color: aliceblue;
+}
+.bar li a:hover{
+    border-bottom: 3px solid aliceblue;
+}
+
+/* LOG IN FORM */
+.form{
+    width: 450px;
+    background: rgb(58, 90, 32);
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgb(69, 56, 56, 0.3); 
+    padding: 60px 50px;
+    margin: auto;
+    margin-top: 5%;
+}
+.form h1{
+    font-family:'Lucida Grande', serif;
+    color: lightgrey;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 270%;
+    width: 100%;
+    height: 40px;
+}
+.form .form-group{
+    width: 100%;
+    height:20px;
+    margin: 30px 0;
+}
+.form .form-group input{
+    width: 95%;
+    height: 100%;
+    color: rgb(240, 248, 255);
+    background: transparent;
+    padding: 5px;
+    padding-left: 25px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+.form .form-group input::placeholder{
+    color:rgb(240, 248, 255, .7);
+    padding-left: 0px;
+}
+.form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    padding-top: 5px;
+    margin: -15px 0 15px;   
+    color: rgb(240, 248, 255, .7);
+}
+.form #submit{
+    height: 25px;
+    width: 100%;
+    color:rgb(240, 248, 255, .7);
+    background: linear-gradient(135deg, #18a461, #a479b5);
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.form #submit:hover{
+    background: linear-gradient(-135deg, #18a461, #a479b5);
+}
+.form .register{
+    color: rgb(240, 248, 255, .7);
+    text-align: center;
+    padding-top: 15px;
+}
+.form a{
+    color: rgb(240, 248, 255, .7);
+    text-decoration: none;
+}
+
+/* CSS MEDIA QUERIES */
+@media (min-width: 1000px){
+    .main{
+        min-width: 100vh;
+        min-height: 595px;
+    }
+}
+
+@media (max-width: 2700px){
+    .main{
+        min-width: 100vh;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .main{
+        min-width: 100vh;
+        min-height: auto;
+    }
+    .bar{
+        padding: 15px 2%;
+    }
+}

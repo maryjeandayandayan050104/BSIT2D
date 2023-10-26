@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./green-aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: inherit;
+}
+
+/* Navigation Bar */
+.bar{
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    background-color: rgb(58, 90, 32);
+    box-shadow: 0 0 14px rgb(69, 56, 56, 0.3);
+}
+.bar .logo{
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+}
+.bar .navigation li{
+    list-style: none;
+    display: inline-block;
+}
+.bar .navigation li a{
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+.bar .navigation li a i{
+    color: aliceblue;
+}
+.bar li a:hover{
+    border-bottom: 3px solid aliceblue;
+}
+
+/* ABOUT US (ME) */
+.aboutUs{
+    cursor: pointer;
+    margin: auto;
+}
+.aboutUs .auTitle{
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    color: aliceblue;
+    margin: auto;
+    margin-bottom: 8%;
+    font-size: 500%;
+    width: 90%;
+    padding: 40px;
+    text-align: center;
+}
+.aboutJeanique{
+    color: aliceblue;
+    text-align: justify;
+    margin: auto;
+    font-size: 200%;
+    padding: 50px;
+    width: 90%
+}
+.aboutJeanique .slogan{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* FOOTER AND CONTACT DETAILS */
+.contact{
+    background: rgb(58, 90, 32);
+    display: flex;
+    justify-content: flex-end;
+}
+.contact .logo-footer{
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+}
+.fa{
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-bottom: 30px;
+}
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(.9);
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-telegram{
+    background: #0088CC;
+    color: white;
+}
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+/* CSS MEDIA QUERIES */
+
+@media (max-width: 1000px){
+    .bar{
+        padding: 10px 2%;
+        align-items: center;
+        justify-content: space-between;
+        position: static;
+    }
+    .bar .logo{
+        height: 35px;
+        width: 100px;
+        cursor: pointer;
+    }
+    .bar .navigation li{
+        list-style: none;
+        display: inline-block;
+    }
+    .bar .navigation li a{
+        display: block;
+        color: aliceblue;
+        font-size: 10px;
+        margin-left: 10px;
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+    }
+    .aboutUs .auTitle{
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        font-size: 200%;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+    .aboutJeanique{
+        color: aliceblue;
+        text-align: justify;
+        margin: auto;
+        font-size: 180%;
+        padding: 2px;
+        width: 90%
+    }
+    .aboutJeanique .slogan{
+        text-align: center;
+        color: aliceblue;
+        font-size: 25px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .contact .logo-footer{
+        width: 110px;
+        height: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 150px;
+    }
+    .fa{
+        padding: 10px;
+        font-size: 15px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        margin-bottom: 30px;
+    }
+}
